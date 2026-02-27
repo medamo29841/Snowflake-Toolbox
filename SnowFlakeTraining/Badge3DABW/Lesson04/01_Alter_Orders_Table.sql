@@ -1,0 +1,1 @@
+alter table ORDERS add column name_on_order varchar(100);

@@ -1,0 +1,6 @@
+SHOW NETWORK POLICIES;
+SHOW PARAMETERS LIKE 'NETWORK_POLICY' FOR USER MEDAMOR;
+
+select current_user();
+
+Select * from Orders;

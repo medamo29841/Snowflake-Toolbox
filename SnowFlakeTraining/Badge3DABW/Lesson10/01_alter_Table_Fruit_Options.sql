@@ -1,0 +1,9 @@
+Alter Table FRUIT_OPTIONS Add COLUMN SEARCH_ON VARCHAR(25);
+
+Alter Table FRUIT_OPTIONS alter column SEARCH_ON VARCHAR(50);
+
+Select * from FRUIT_OPTIONS order by 2;
+
+Update FRUIT_OPTIONS
+set SEARCH_ON = FRUIT_NAME
+where SEARCH_ON is null;

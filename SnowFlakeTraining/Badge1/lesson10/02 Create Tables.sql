@@ -1,0 +1,44 @@
+use database library_card_catalog;
+use role sysadmin;
+
+// Create the book table and use AUTOINCREMENT to generate a UID for each new row
+
+create or replace table book
+( book_uid number autoincrement
+ , title varchar(50)
+ , year_published number(4,0)
+);
+
+// Insert records into the book table
+// You don't have to list anything for the
+// BOOK_UID field because the AUTOINCREMENT property 
+// will take care of it for you
+
+insert into book(title, year_published)
+values
+ ('Food',2001)
+,('Food',2006)
+,('Food',2008)
+,('Food',2016)
+,('Food',2015);
+
+// Check your table. Does each row have a unique id? 
+select * from book;
+
+// Create Author table
+create or replace table author (
+   author_uid number 
+  ,first_name varchar(50)
+  ,middle_name varchar(50)
+  ,last_name varchar(50)
+);
+
+// Insert the first two authors into the Author table
+insert into author(author_uid, first_name, middle_name, last_name)  
+values
+(1, 'Fiona', '','Macdonald')
+,(2, 'Gian','Paulo','Faleschini');
+
+// Look at your table with it's new rows
+select * 
+from author;
