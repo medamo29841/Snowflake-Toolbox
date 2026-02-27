@@ -1,10 +1,10 @@
 /*****
 ROLE - ACCOUNTADMIN
 This method works only when installing the application from Snowflake on Github for the repository in question
-    https://github.com/apps/snowflakedb
-    This handles all the Oath2 requirements
-
-You can use OATH2 without the app, however, it is much more complicated 
+    Installs on github
+        https://github.com/apps/snowflakedb
+        Create and choose repositories for Workspaces
+        This handles all the Oath2 requirements
 *****/
 
 CREATE OR REPLACE API INTEGRATION my_git_integration
