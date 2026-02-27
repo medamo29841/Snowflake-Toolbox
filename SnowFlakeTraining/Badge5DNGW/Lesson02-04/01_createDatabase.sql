@@ -1,0 +1,3 @@
+Create DATABASE AGS_GAME_AUDIENCE;
+Create Schema RAW;
+DROP Schema PUBLIC;

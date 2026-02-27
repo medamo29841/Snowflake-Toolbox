@@ -1,0 +1,4 @@
+Create DATABASE ZENAS_ATHLEISURE_DB;
+Create Schema PRODUCTS;
+Drop Schema PUBLIC ;
+
